@@ -126,8 +126,8 @@ footer {
     /* Tamaño relativo al contenedor padre */
     height: auto;
     /* Altura automática para mantener la proporción */
-    margin-right: 6vw;
-    margin: 6vw;
+    margin-right: 8vw;
+    margin: 8vw;
     /* Margen derecho relativo */
     opacity: 2;
 }
@@ -139,8 +139,8 @@ footer {
     /* Tamaño máximo en píxeles */
     height: auto;
     /* Altura automática para mantener la proporción */
-    margin-right: 6vw;
-    margin: 6vw;
+    margin-right: 8vw;
+    margin: 8vw;
     /* Margen derecho relativo */
 }
 
@@ -203,8 +203,8 @@ footer {
         /* Tamaño relativo al contenedor padre */
         height: auto;
         /* Altura automática para mantener la proporción */
-        margin-right: 5vw;
-        margin: 5vw;
+        margin-right: 2vw;
+        margin: 2vw;
         /* Margen derecho relativo */
     }
 }
