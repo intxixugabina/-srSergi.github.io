@@ -16,7 +16,7 @@ body {
 }
 
 header {
-    background-color: black;
+    background-color: #333;
     color: #fff;
     padding: 20px;
     text-align: center;
@@ -87,7 +87,7 @@ section {
 }
 
 footer {
-    background-color: #333;
+    background-color: Black;
     color: #fff;
     padding: 20px;
     text-align: center;
