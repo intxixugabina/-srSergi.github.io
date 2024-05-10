@@ -43,6 +43,13 @@
             text-align: center;
         }
 
+        /* Hacer que el contenedor del stream sea responsive */
+        #twitch-embed {
+            width: 100%;
+            max-width: 800px; /* Cambiar según sea necesario */
+            margin: 0 auto;
+        }
+
         @media (max-width: 600px) {
             nav {
                 display: block;
@@ -69,25 +76,19 @@
 
     <section>
         <h2>Transmisión en vivo</h2>
-
-
+        <!-- Contenedor del stream -->
         <div id="twitch-embed"></div>
-
+        <!-- Script de Twitch -->
         <script src="https://embed.twitch.tv/embed/v1.js"></script>
         <script type="text/javascript">
             new Twitch.Embed("twitch-embed", {
-                  width: 1000,
-                height: 700,
+                width: "100%",
+                height: "auto",
                 channel: "tense198_v2",
-                parent: ['feardragon.com'],
                 layout: "video",
                 autoplay: true,
             });
         </script>
-
-        <iframe src="https://player.twitch.tv/?channel=tense198_v2&parent=www.example.com" frameborder="0"
-            allowfullscreen="true" scrolling="no" height="378" width="620"></iframe>
-
     </section>
 
     <footer>
