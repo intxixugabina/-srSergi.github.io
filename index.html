@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sitio de srSergi</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background-color: #333;
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+        }
+
+        nav {
+            background-color: #444;
+            padding: 10px;
+            text-align: center;
+        }
+
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            padding: 10px 20px;
+        }
+
+        section {
+            padding: 20px;
+            text-align: center;
+        }
+
+        footer {
+            background-color: #333;
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+        }
+
+        @media (max-width: 600px) {
+            nav {
+                display: block;
+            }
+
+            nav a {
+                display: block;
+                padding: 10px 0;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>¡Bienvenido a la página de srSergi!</h1>
+    </header>
+
+    <nav>
+        <a href="#">Inicio</a>
+        <a href="#">Stream</a>
+        <a href="#">Contacto</a>
+    </nav>
+
+    <section>
+        <h2>Transmisión en vivo</h2>
+
+
+        <div id="twitch-embed"></div>
+
+        <script src="https://embed.twitch.tv/embed/v1.js"></script>
+        <script type="text/javascript">
+            new Twitch.Embed("twitch-embed", {
+                width: 800,
+                height: 600,
+                channel: "tense198_v2",
+                parent: ['feardragon.com'],
+                layout: "video",
+                autoplay: false,
+                muted: false,
+            });
+        </script>
+
+        <iframe src="https://player.twitch.tv/?channel=tense198_v2&parent=www.example.com" frameborder="0"
+            allowfullscreen="true" scrolling="no" height="378" width="620"></iframe>
+
+    </section>
+
+    <footer>
+        <p>© 2024 srSergi. Todos los derechos reservados.</p>
+    </footer>
+</body>
+
+</html>
