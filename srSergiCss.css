@@ -110,6 +110,17 @@ footer {
 
 }
 
+#redes-sociales {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 25vh;
+    z-index: 2;
+    background-color: #555;
+    opacity: 0.9;
+
+}
+
 .logos {
     width: 6vw;
     /* Tamaño relativo al contenedor padre */
@@ -118,6 +129,7 @@ footer {
     margin-right: 8vw;
     margin: 8vw;
     /* Margen derecho relativo */
+    opacity: 2;
 }
 
 .logos:hover {
@@ -132,12 +144,7 @@ footer {
     /* Margen derecho relativo */
 }
 
-#redes-sociales {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 25vh;
-}
+
 
 #menu-toggle+label {
 
@@ -146,6 +153,7 @@ footer {
 
 
 }
+
 
 @media (max-width: 600px) {
     html {
