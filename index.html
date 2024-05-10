@@ -4,217 +4,17 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <title>Sitio de srSergi</title>
-    <style>
-        html {
-            padding: 0;
-            margin: 0;
-            width: auto;
-        }
-
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-        }
-
-        header {
-            background-color: #333;
-            color: #fff;
-            padding: 20px;
-            text-align: center;
-        }
-
-        #menu-container {
-            display: flex;
-            align-items: center;
-            background-color: black;
-            padding: 10px;
-        }
-
-        #menu {
-            list-style-type: none;
-            margin: 0;
-            padding: 0;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            flex-grow: 1;
-        }
-
-        #menu li {
-            display: inline;
-            margin: 0 15px;
-        }
-
-        #menu li a {
-            margin-left: -60%;
-            color: white;
-            text-decoration: none;
-            padding: 0px 15px;
-            border-radius: 5px;
-            transition: background-color 0.3s ease;
-        }
-
-        #menu li a:hover {
-
-            background-color: white;
-            color: black;
-        }
-
-        /* Estilos para el botón de menú en dispositivos pequeños */
-        #menu-toggle {
-            display: none;
-            /* Oculta el botón de menú por defecto */
-        }
-
-        #logoheader {
-            width: 90px;
-            border-radius: 50%;
-            margin-right: 10px;
-        }
+    <link rel="stylesheet" href="srSergiCss.css" type="text/css">
 
 
-
-        #menu-toggle+label:hover {
-            background-color: #555;
-        }
-
-        #logoheader {
-            width: 90px;
-            border-radius: 50%;
-            margin-right: 0px;
-        }
-
-        #menu-toggle:checked+label {
-            background-color: white;
-            color: black;
-        }
-
-        section {
-            padding: 20px;
-            text-align: center;
-        }
-
-        footer {
-            background-color: #333;
-            color: #fff;
-            padding: 20px;
-            text-align: center;
-
-        }
-
-        /* Hacer que el contenedor del stream sea responsive */
-        #twitch-embed {
-            width: 100%;
-            max-width: 800px;
-            /* Cambiar según sea necesario */
-            margin: 0 auto;
-        }
-
-        #fondoDePagina {
-            background-color: red;
-
-        }
-
-        .logos {
-            width: 6vw;
-            /* Tamaño relativo al contenedor padre */
-            height: auto;
-            /* Altura automática para mantener la proporción */
-            margin-right: 8vw;
-            margin: 8vw;
-            /* Margen derecho relativo */
-        }
-
-        .logos:hover {
-            width: 13%;
-            /* Tamaño relativo al contenedor padre */
-            max-width: 50px;
-            /* Tamaño máximo en píxeles */
-            height: auto;
-            /* Altura automática para mantener la proporción */
-            margin-right: 2%;
-            /* Margen derecho relativo */
-        }
-
-        #redes-sociales {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 25vh;
-        }
-
-        #menu-toggle+label {
-
-            background-color: black;
-            color: black;
-
-
-        }
-
-        @media (max-width: 600px) {
-            html {
-                padding: 0;
-                margin: 0;
-                width: auto;
-            }
-
-            #menu {
-
-                display: none;
-                /* Oculta el menú por defecto en dispositivos pequeños */
-            }
-
-            #menu li {
-                display: block;
-                margin: 5px 0;
-            }
-
-            #menu-toggle {
-
-                display: none;
-            }
-
-            #menu-toggle:checked+label+#menu {
-                margin-left: 50%;
-                display: flex;
-                flex-direction: row-reverse;
-                align-items: flex-start;
-                position: fixed;
-            }
-
-            /* Estilos para el menú desplegable */
-            #menu-toggle+label {
-
-                margin-left: auto;
-                cursor: pointer;
-                background-color: white;
-                color: black;
-                padding: 10px 15px;
-                border-radius: 5px;
-                transition: background-color 0.3s ease;
-            }
-
-            .logos {
-                width: 16vw;
-                /* Tamaño relativo al contenedor padre */
-                height: auto;
-                /* Altura automática para mantener la proporción */
-                margin-right: 5vw;
-                margin: 5vw;
-                /* Margen derecho relativo */
-            }
-        }
-    </style>
 </head>
 
 <body>
     <div id="menu-container">
         <!-- Imagen del streamer a la izquierda -->
-        <img id="logoheader"
-            src="C:\Users\intxi\OneDrive\Imágenes\redes sociales\a539ecb9-2b81-4fb5-9573-c6efea6d497f.jpg"
-            alt="Streamer">
+        <img id="logoheader" src="redes sociales\a539ecb9-2b81-4fb5-9573-c6efea6d497f.jpg" alt="Streamer">
 
         <!-- Botón de menú para dispositivos pequeños -->
         <input type="checkbox" id="menu-toggle">
@@ -230,7 +30,7 @@
 
     <section id="fondoDePagina" style="position: static">
         <script>
-            const twitchChannel = 'srSergi'; // Twitch channel name
+            const twitchChannel = 'v'; // Twitch channel name
 
             async function getStreamTitle() {
                 try {
@@ -278,8 +78,9 @@
             const redesSociales = {
                 twitch: "https://www.twitch.tv/srSergi",
                 instagram: "https://www.instagram.com/srSergi",
-                discord: "https://www.youtube.com/srSergi",
-                tiktok: "https://www.youtube.com/srSergi",
+                discord: "https://discord.gg/bc56m9qT",
+                youtube: "https://www.youtube.com/@SrSergi-twitch",
+                tiktok: "https://www.tiktok.com/@sergimahe?_t=8mEuoweJHRg&_r=1"
                 // Puedes añadir más redes sociales según sea necesario
             };
 
@@ -296,16 +97,19 @@
                         let icono = "";
                         switch (red) {
                             case "twitch":
-                                icono = "<img  src='redes sociales/loginsta.png' class='logos'>";
+                                icono = "<img  src='redes sociales/logotwich.png' class='logos'>";
                                 break;
-                            case "tiktok":
-                                icono = "<img  src='redes sociales/loginsta.png' class='logos'>";
+                            case "youtube":
+                                icono = "<img  src='redes sociales/logoyoutube.png' class='logos'>";
                                 break;
                             case "instagram":
                                 icono = "<img  src='redes sociales/loginsta.png' class='logos'>";
                                 break;
                             case "discord":
-                                icono = "<img  src='redes sociales/loginsta.png' class='logos'>";
+                                icono = "<img  src='redes sociales/logodiscord.png' class='logos'>";
+                                break;
+                            case "tiktok":
+                                icono = "<img  src='redes sociales/logotiktok.png' class='logos'>";
                                 break;
                         }
                         enlace.innerHTML = icono; // Aquí podrías usar un icono de imagen o fuente
