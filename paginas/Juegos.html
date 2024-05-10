@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>srSergi</title>
+    <link rel="stylesheet" href="../srSergiCss.css" type="text/css">
+
+    <style>
+        /* CSS para el footer */
+        footer {
+            position: fixed;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            background-color: #333;
+            color: #fff;
+            padding: 10px;
+            text-align: center;
+        }
+
+        /* CSS para el div central */
+        #center-div {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            background-color: #f0f0f0;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            width: 80%;
+            /* Ancho inicial */
+            max-width: 600px;
+            /* Ancho máximo */
+            margin: 0 auto;
+            /* Centra horizontalmente */
+        }
+
+        /* CSS para el botón */
+        #download-btn {
+            padding: 10px 20px;
+            background-color: #007bff;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+            margin-top: 20px;
+        }
+
+        #logo-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-top: 20px;
+        }
+
+        /* Estilos para los logos */
+        .logo {
+            width: 100px;
+            margin: 20px;
+        }
+
+        /* Media Query para pantallas pequeñas */
+        @media screen and (max-width: 600px) {
+            #center-div {
+                width: 90%;
+                /* Ajusta el ancho para pantallas pequeñas */
+            }
+        }
+    </style>
+
+</head>
+
+<body>
+    <div id="menu-container">
+        <!-- Imagen del streamer a la izquierda -->
+        <img id="logoheader" src="../redes sociales\a539ecb9-2b81-4fb5-9573-c6efea6d497f.jpg" alt="Streamer">
+
+        <!-- Botón de menú para dispositivos pequeños -->
+        <input type="checkbox" id="menu-toggle">
+        <label for="menu-toggle">&#9776;</label>
+
+        <!-- Opciones del menú -->
+        <ul id="menu">
+            <li><a href="../index.html">Inicio</a></li>
+            <li><a href="">Juegos</a></li>
+            <!-- Add more menu items here -->
+        </ul>
+    </div>
+
+    <div id="center-div" style="width:40%;">
+        <img style="width:50%;height:25%;margin:0;padding:0;"
+            src="../redes sociales\a539ecb9-2b81-4fb5-9573-c6efea6d497f.jpg" />
+        <br>
+        <br>
+        <button id="download-btn" onclick="downloadFile()">Descargar Archivo</button>
+        <div id="logo-container">
+            <!-- Logo de Android -->
+            <img class="logo"
+                src="data:image/jpeg;base64,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"
+                alt="Android Logo">
+
+            <!-- Logo de Windows -->
+            <img class="logo"
+                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSHsYA9KiJjR_Zil6PzJl2U7IOizAlIfFJfQw&usqp=CAU"
+                alt="Windows Logo">
+        </div>
+    </div>
+
+    <footer>
+        <p>© 2024 srSergi. Todos los derechos reservados.</p>
+    </footer>
+
+    <script>
+        // Función para descargar el archivo
+        function downloadFile() {
+            // URL del archivo a descargar
+            var fileUrl = 'ruta/al/archivo.pdf';
+            // Crea un elemento <a> oculto
+            var a = document.createElement("a");
+            // Asigna la URL al atributo href
+            a.href = fileUrl;
+            // Asigna un nombre al archivo
+            a.download = 'nombre-del-archivo.pdf';
+            // Añade el elemento al documento
+            document.body.appendChild(a);
+            // Simula un clic en el elemento <a> para iniciar la descarga
+            a.click();
+            // Elimina el elemento <a> del documento
+            document.body.removeChild(a);
+        }
+    </script>
+</body>
+
+</html>
